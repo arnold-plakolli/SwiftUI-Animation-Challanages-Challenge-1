@@ -20,7 +20,7 @@ struct ContentView: View {
 		.init(value: 0.75),
 		.init(value: 0.25)
 	]
-	private let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+	private let timer = Timer.publish(every: 0.5, on: .main, in: .common).autoconnect()
 	
 	var body: some View {
 		ZStack {
